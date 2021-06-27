@@ -1,0 +1,17 @@
+mixin sRews(data)
+	// start sRews
+	+b.SECTION.sRews.section#sRews&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Отзывы доверителей
+				
+			.row
+				mixin item()
+					+e.col.col-sm-4 
+						+e.item(href=`img/@2x/rew.jpg` data-fancybox="rew").bg-wrap
+							+pic("rew.jpg",'bg',0).picture-bg
+							+icon("zoom")
+				+item()
+				+item()
+				+item()
+	// end sRews

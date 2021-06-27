@@ -1,0 +1,68 @@
+// start .sWays
+.sWays {
+		// --sPT: ;
+		// --sPB: ;
+		// --sTPB: ;
+		ul{
+
+		}
+		&__head{
+				@include media-breakpoint-up(lg){
+
+					padding-top: rem(53);
+					padding-bottom: rem(45);
+				}
+				padding-top: rem(20);
+				padding-bottom: rem(20);
+			display: flex;
+			align-items: center;
+			font-weight: bold;
+			font-size: rem(20);
+			picture{
+				margin-right: rem(20);
+			}
+		}
+		ul{
+			margin-left: rem(20);
+			margin-bottom: rem(56);
+		}
+		li{
+			&::marker{
+				color: $primary;
+			}
+			margin-bottom: 1em;
+		}
+		&__head,
+		&__body{
+			@include media-breakpoint-up(lg) {
+
+				padding-left: rem(44);
+				padding-right: rem(44);
+			}
+			padding-left: rem(15);
+			padding-right: rem(15);
+		}
+		&__item{
+			border: 1px solid $warning;
+			background-color: #ffffff;
+			border-radius: 30px;
+			max-width: rem(440);
+			margin-left: auto;
+			margin-right: auto;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			min-height: calc(100% - 30px);
+			margin-bottom: 30px;
+		}
+		&__foot{
+			margin-top: auto;
+		}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sWays

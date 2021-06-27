@@ -1,0 +1,41 @@
+extends layout/main.pug
+
+
+include ../blocks/sContent/_sContent.pug
+include ../blocks/sContact/_sContact.pug
+include ../blocks/sWays/_sWays.pug
+include ../blocks/sAbout/_sAbout.pug
+include ../blocks/sChoice/_sChoice.pug
+include ../blocks/sRews/_sRews.pug
+include ../blocks/sCases/_sCases.pug 
+include ../blocks/sCards/_sCards.pug 
+
+block variables
+	- let  mainPage= null 
+	- let  bg= null
+
+block title
+	- let  title= 'title'
+	title= title
+block pagecontent
+
+
+	+mob-mnu()
+	header.bg-wrap
+		+pic("head-bg.jpg",'bg').picture-bg
+		+topLine()
+		+headerBlock()
+	+sWays
+	+sAbout
+	+sChoice
+	+sCards
+	+sRews
+	+sCases
+	+sForm()
+	+sContact()
+	+footer()
+		+topLine()
+      
+
+
+

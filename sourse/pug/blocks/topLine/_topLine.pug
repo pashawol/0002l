@@ -1,0 +1,22 @@
+mixin topLine()
+	// start topLine
+	+b.topLine.section#topLine&attributes(attributes)
+		.container
+			.row
+				.col-lg-auto
+					+e.addr
+						.strong Адвокат Карташова Инна Юрьевна
+						.text-primary 105066 г. Москва, Новая Басманная д. 37, стр. 1, офис 500-1
+
+				.col-sm
+					+e.time
+						+e.time-inner
+							.strong Время работы:
+							.text-primary 24/7
+				.col-auto
+					+e.tel(href="tel:+79067996055")  
+						span +7 906
+						|  799 60 55
+				.col-auto
+					+e.btn(href="#") Обратный звонок
+	// end topLine

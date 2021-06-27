@@ -1,0 +1,16 @@
+mixin sForm()
+	// start sForm
+	+b.SECTION.sForm.section#sForm&attributes(attributes)
+		.container
+			+b.section-title.text-center
+
+			+b.form-wrap.bg-wrap
+				+pic("form-bg.jpg",'bg').picture-bg
+				h2 Заполните форму для записи на первичную консультацию
+				form
+					+input('Введите Ваше имя')
+					+input('Введите Ваш телефон','tel')
+					+input('Введите Ваш E-mail','email')
+					input.btn.btn-primary.w-100(type="submit" value="Записаться на консультацию") 
+
+	// end sForm

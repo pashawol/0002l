@@ -1,0 +1,39 @@
+// start .sCases
+.sCases {
+		// --sPT: ;
+		@include media-breakpoint-up(lg) {
+		--sPB: 0;
+		margin-bottom: 100px;
+		}
+		// --sTPB: ;
+		&__item{
+			padding: rem(50) rem(30);
+			box-shadow: 0 22px 49px rgba(226, 212, 200, 0.75); 
+		border-radius: rem(30);
+		background-color: rgba($color: #fcfbfb, $alpha: .68);
+		@include media-breakpoint-up(lg) {
+		margin-bottom: -100px;
+		}
+		margin-bottom: 30px;
+	}
+	&__wrap{
+		
+	}
+	.row{
+		// margin-bottom: -100px;
+		}
+	@include media-breakpoint-up(xl) {
+		.row{
+			--bs-gutter-x: 70px;
+		}
+	}
+	a{
+		@extend .tdu;
+	}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sCases

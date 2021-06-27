@@ -1,0 +1,61 @@
+// start .sAbout
+.sAbout {
+		p {
+			position: relative;
+			padding-left: rem(55);
+
+			&::before {
+				content: url(../img/@2x/right.png);
+				position: absolute;
+				left: 0;
+				// top: 0;
+			}
+		}
+img {
+
+	// width: (100% * 1342);
+	@include media-breakpoint-up(xl) {
+		max-width: 70%;
+	}
+
+	// background: top left;
+}
+}
+.sChoice,
+.sAbout {
+	// --sPT: ;
+	--sPB: #{rem(100)};
+	// --sTPB: ;
+	picture{
+		@include media-breakpoint-down(xl) {
+			opacity: .2;
+		}
+		
+	}
+	li{
+		&::marker{
+			content: '- ';
+		}
+	}
+	ul{
+		margin-bottom: rem(52);
+	}
+	h2{
+		margin-bottom: 1em;
+	}
+	&__inner{
+		max-width: rem(650);
+		margin-left: auto;
+	}
+	a{
+		@extend .tdu;
+	}
+
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sAbout

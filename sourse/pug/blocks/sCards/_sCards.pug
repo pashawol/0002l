@@ -1,0 +1,13 @@
+mixin sCards(data)
+	// start sCards
+	+b.SECTION.sCards.section.pt-0#sCards&attributes(attributes)
+		.container
+			+e.inner.text-center
+				.row
+					- for (var x = 0; x < 4; x++)
+						+e.col.col-lg-3.col-6 
+							+e.item.bg-wrap
+								+pic("rew.jpg",'bg',0).picture-bg
+				+e.btn(href="#") Записаться на консультацию
+
+	// end sCards

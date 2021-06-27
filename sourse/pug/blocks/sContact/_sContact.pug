@@ -1,0 +1,10 @@
+mixin sContact()
+	// start sContact
+	+b.SECTION.sContact#sContact&attributes(attributes)
+		.container
+			+b.section-title.text-center
+				h2 Если у Вас есть вопросы, обращайтесь: #[a(href="tel:+7(906)7996055") +7(906)7996055]
+				
+		+e.map-wrap
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A227c16f60ecaf8327d6f4c011e78aef700bf37de6856a05c7ed8a86c10092bbf&amp;width=100%25&amp;height=558&amp;lang=ru_RU&amp;scroll=false"></script>
+	// end sContact
