@@ -8,7 +8,9 @@
 			box-shadow: 0 22px 49px rgba(226, 212, 200, 0.75);
 			border-radius: rem(30);
 			background-color: rgba($color: #fcfbfb, $alpha: .68);
-			margin-bottom: 30px;
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
 			.icon{
 				position: absolute;
 				right: 30px;

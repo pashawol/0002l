@@ -1,21 +1,28 @@
 // start .headerBlock
 .headerBlock {
+	--sPT: #{rem(22)};
+	@include media-breakpoint-up(sm){
 	--sPT: #{rem(72)};
-	--sPB: #{rem(80)}; 
+	--sPB: #{rem(80)};
+	}
 	
 	h1{
 		font-weight: bold;
-		padding-left: rem(50);
 		position: relative;
-		&::before{
-			content: '';
-			width: 37px;
-			height: 4px;
-			background-color: $primary;
-			position: absolute;
-			top: .5em;
-			left: 0;
-		}
+			@include media-breakpoint-up(sm){
+
+
+				padding-left: rem(50);
+				&::before{
+					content: '';
+					width: 37px;
+					height: 4px;
+					background-color: $primary;
+					position: absolute;
+					top: .5em;
+					left: 0;
+				}
+			}
 	}
 	p{
 		@extend .h2;

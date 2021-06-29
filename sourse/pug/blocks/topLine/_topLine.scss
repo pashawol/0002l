@@ -5,7 +5,7 @@
 			padding-top: rem(40);
 			padding-bottom: rem(30);
 		}
-		padding-top: rem(20);
+		padding-top: rem(0);
 		padding-bottom: rem(10);
 		 border-bottom: 1px solid #e8dbcc;
 
@@ -17,11 +17,17 @@
 		 }
 		
 		&__addr{
-			@include media-breakpoint-up(lg) {
-				max-width: 320px;
+				@include media-breakpoint-down(sm) {
+					display: none;
+				}
+				@include media-breakpoint-up(lg) {
+					max-width: 320px;
+				}
 			}
-		}
-		&__time{
+			&__time{
+			@include media-breakpoint-down(sm) {
+				display: none;
+			}
 			@include media-breakpoint-up(lg) {
 				text-align: center;
 				max-width: rem(280);

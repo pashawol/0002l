@@ -1,6 +1,8 @@
 // start .sCases
 .sCases {
-		// --sPT: ;
+	@include media-breakpoint-down(sm) {
+		--sPB: 0 ;
+	}
 		@include media-breakpoint-up(lg) {
 		--sPB: 0;
 		margin-bottom: 100px;
@@ -14,7 +16,13 @@
 		@include media-breakpoint-up(lg) {
 		margin-bottom: -100px;
 		}
+		&:not(:last-child) {
+		}
+		 
+	}
+	&__col:not(:last-child) &__item{
 		margin-bottom: 30px;
+
 	}
 	&__wrap{
 		
